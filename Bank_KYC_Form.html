@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank KYC Form</title>
+</head>
+<body>
+    <h1><img src="/HTML/bank_logo.png" alt="Error loading image"></h1>
+    <h3>KYC Form</h3>
+    <div>
+        <!-- using forms -->
+        <label for="name">Name:</label>
+        <form action="any_file">
+            <input type="text" name="cus_name" id="name">
+        </form>
+    </div>
+    <br>
+    <div>
+        <!-- using select and options-->
+        <label for="Identity">Identity Proof type</label>
+        <br>
+        <select name="id_proof" id="Identity">             
+            <option value="Aadhar" selected>Aadhar Card</option>
+            <option value="pan">Pan Card</option>
+            <option value="Voter">Voter ID</option>
+            <option value="Driving">Driving Licence</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="Iden">Identity Proof Number:</label>
+        <form action="any_file"></form>
+        <input type="number" name="Identity_number" id="Iden">
+    </div>
+    <br>
+    <div>
+        Gender:
+        <br>
+            <input type="radio" name="cus_gen" id="gender"> Male 
+            <input type="radio" name="cus_gen" id="gender"> Female  
+            <input type="radio" name="cus_gen" id="gender"> Other
+    </div>
+    <br>
+    <div>
+        <input type="checkbox" name="agree" id="agreed"> 
+        <label for="agreed">accept</label> 
+        <a href="/HTML/terms_and_conditions.html">terms and conditions</a>
+    </div>
+    <br>
+    <label for="any_queris">Ask for any queries or suggestions</label>
+    <div>
+        <textarea name="queries" id="any_queris" cols="200" rows="10"></textarea>
+    </div>
+    <label for="dob">DOB:</label>
+    <div>
+        <input type="date" name="dob" id="dob">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+    </div>
+    <br>
+    <div>
+        <input type="reset" value="Reset Values">
+    </div>
+</body>
+</html>
